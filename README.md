@@ -38,10 +38,7 @@
 ## 🙆‍♂️🧏‍♀️ 수어 영상 한글 번역기
 ### ✔ 목적
 - 수어를 모르는 사람과 청각 장애인 간의 원활한 의사소통 
-### 📢 방향
-- 제품 이미지 학습 및 쇼핑 경로 안내
 ### 🕹 수행 방법▪도구
-- Object Tracking (객체 탐지 및 추적 방법)
 - 모델 : 수어 인식 모델(DG-STA, SMKD), 번역기 모델(transformer)
 - 실험 데이터 : MOT16, MOT challenge benchmark (CCTV 영상처럼 구성)
 - 라이브러리 : pytorch, opencv
