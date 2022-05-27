@@ -27,12 +27,13 @@
 
 ### 🔍 사례
 
-- [시각장애인을 위한 편의점 음료 서비스](https://github.com/se-ize/BeYerage)
-- [설리번+:시각장애인 및 저시력자 등 시각의 보조가 필요한 사용자들에게 스마트폰 카메라를 통해 인식한 정보를 알려주는 서비스 ](https://www.mysullivan.org/)
-- [서비스 - LG CNS 상품검색 API 서비스](ai.lgcns.com)
-- [논문 - 딥러닝 객체 탐지 기술을 사용한 스마트 쇼핑카트의 구현](https://www.koreascience.or.kr/article/JAKO202021853968918.pdf)
-- [뉴스기사 - NEC의 상품인식 개발](http://www.aitimes.kr/news/articleView.html?idxno=11439) : 딥러닝 + 특징점 융합
-- [와들프로젝트:시각장애인을 위해 OCR을 사용하여 온라인 쇼핑 페이지를 읽어주는 서비스 (온라인)](https://www.chosun.com/national/national_general/2021/06/15/B2NNB3S35NFHTEHSRJHUUZIICM/)
+- 서비스구현 [시각장애인을 위한 편의점 음료 서비스](https://github.com/se-ize/BeYerage)
+- 서비스 [설리번+:시각장애인 및 저시력자 등 시각의 보조가 필요한 사용자들에게 스마트폰 카메라를 통해 인식한 정보를 알려주는 서비스 ](https://www.mysullivan.org/)
+- 서비스 [LG CNS 상품검색 API 서비스](ai.lgcns.com)
+- 논문 [딥러닝 객체 탐지 기술을 사용한 스마트 쇼핑카트의 구현](https://www.koreascience.or.kr/article/JAKO202021853968918.pdf)
+- 뉴스기사 [NEC의 상품인식 개발](http://www.aitimes.kr/news/articleView.html?idxno=11439) : 딥러닝 + 특징점 융합
+- 논문, 코드 [로고인식 논문, 소스코드](https://m.facebook.com/groups/TensorFlowKR/permalink/501214233552973/)
+- 서비스구현 [와들프로젝트:시각장애인을 위해 OCR을 사용하여 온라인 쇼핑 페이지를 읽어주는 서비스 (온라인)](https://www.chosun.com/national/national_general/2021/06/15/B2NNB3S35NFHTEHSRJHUUZIICM/)
 
 ## 🙆‍♂️🧏‍♀️ 수어 영상 한글 번역기
 ### ✔ 목적
