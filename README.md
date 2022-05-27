@@ -13,9 +13,11 @@
 - 시각장애인의 위치를 Detecting, Tracking 하여 쇼핑 경로 안내
 ### 🕹 수행 방법▪도구
 - Object Tracking (객체 탐지 및 추적 방법)
-- 딥러닝 기반 실시간 다중 추적 시스템 : YOLO-v3, Deep Sort
-- 실험 데이터 : MOT16, MOT challenge benchmark (CCTV 영상처럼 구성)
-- 라이브러리 : pytorch, opencv, sklearn
+  - model : YOLO-v3, Deep Sort (딥러닝 기반 실시간 다중 추적 시스템)
+  - 실험 데이터 : MOT16, MOT challenge benchmark (CCTV 영상처럼 구성)
+- IDE : Jupyter Notebook
+- Tool : Python
+- library : pytorch, opencv, sklearn, matplotlib, numpy, pandas
 ### ⭐ 필수 기능
 - 상품명 촬영 시 이미지 인식 (마트 홈페이지 크롤링 데이터로부터 검색 후 가격 정보 안내 & 유사품과 가격 비교)
 - 마트에 설치된 카메라로 사용자를 인식, 추적하여 사용자의 위치 정보 생성
@@ -45,7 +47,7 @@
 - model: 수어 인식 모델(DG-STA, SMKD), 번역기 모델(transformer)
 - IDE : Jupyter Notebook, 
 - Tool : Python
-- library : pytorch, opencv,  matplotlib, numpy, pandas, seaborn
+- library : pytorch, opencv,  matplotlib, numpy, pandas
 
 ### ⭐ 필수 기능
 - 이미지 인식 : 수어 영상에서 hand skeleton recognition, 이미지 인식 모델을 통해 한글 단어로 분류
