@@ -30,7 +30,7 @@
 
 ### 🔍 사례
 
-- [[서비스구현]시각장애인을 위한 편의점 음료 서비스](https://github.com/se-ize/BeYerage)
+- [[서비스구현] 시각장애인을 위한 편의점 음료 서비스](https://github.com/se-ize/BeYerage)
 - [[서비스(앱)] 설리번+ : 스마트폰 카메라를 통해 인식한 정보를 알려주는 서비스 ](https://www.mysullivan.org/)
 - [[서비스(API)] LG CNS 상품검색 API 서비스](ai.lgcns.com)
 - [[논문] 딥러닝 객체 탐지 기술을 사용한 스마트 쇼핑카트의 구현](https://www.koreascience.or.kr/article/JAKO202021853968918.pdf)
@@ -57,7 +57,7 @@
 
 ### 📚 데이터
 
-- [AI허브](https://aihub.or.kr/aidata/7965)한국수어 문법연구
+- [AI허브](https://aihub.or.kr/aidata/7965) 한국수어 문법연구
 - [국립국어원 수어사전(일상단어 3800개)](https://sldict.korean.go.kr/front/main/main.do)
 - [데이콘](https://dacon.io/competitions/official/235896/overview/description)
 - [한국 수어 활용조사 통계자료](https://kosis.kr/statHtml/statHtml.do?orgId=113&tblId=DT_113_STBL_1030204&vw_cd=MT_ZTITLE&list_id=H2_20&scrId=&seqNo=&lang_mode=ko&obj_var_id=&itm_id=&conn_path=K1&path=%EB%AC%B8%ED%99%94%E3%86%8D%EC%97%AC%EA%B0%80%20%3E%20%ED%95%9C%EA%B5%AD%EC%88%98%EC%96%B4%ED%99%9C%EC%9A%A9%EC%A1%B0%EC%82%AC%ED%95%9C%EA%B5%AD%EC%88%98%EC%96%B4%EB%A5%BC%20%EB%B0%9C%EC%A0%84%EC%8B%9C%ED%82%A4%EA%B8%B0%20%EC%9C%84%ED%95%B4%EC%84%9C%20%ED%95%84%EC%9A%94%ED%95%9C%20%EC%9D%BC%20(1%EC%88%9C%EC%9C%84))
