@@ -9,7 +9,7 @@
 ### ✔ 목적
 - 시각 장애인의 쇼핑 편의 향상
 ### 📢 방향
-- 상품 이미지를 학습하여 상품 인식, 안내
+- 상품 이미지를 학습하여 상품 인식, 상품 세부 내용 안내
 - ~~시각장애인의 위치를 Detecting, Tracking 하여 쇼핑 경로 안내~~
 - 마트 상품코너 데이터를 토대로 상품 코너 경로 안내
 ### 🕹 수행 방법▪도구
@@ -28,6 +28,9 @@
     - YOLO 모델을 사용하여 사람을 인식
     - tensorflow Lite 사용하여 라즈베리파이에 올릴 수 있는 경량화된 모델로 제작
 - 상품 분류 : Web에서 predict 진행, pytorch
+  - 상품의 카테고리에 따라서 상품 분류 모델 제작(가전, 식품, 생활용품과 같은 다양한 항목)
+  - pre-trained model(ResNet, RegNet, EfficientNet, Inception)을 사용해서 fine-tuning하여 최적화
+  - 카메라로 찍은 이미지와 해당 위치 정보를 같이 받아서 위치정보에 맞는 상품 분류 모델을 사용
 ### 📚 데이터
 - [딥러닝 기반 다중 CCTV 영상](https://drive.google.com/drive/folders/1el9kK4wgaiMzEMlfzqeQx6acoq703diP)
 - [Real-Time Object Detection on COCO](https://paperswithcode.com/sota/real-time-object-detection-on-coco)
