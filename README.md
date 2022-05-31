@@ -10,7 +10,8 @@
 - 시각 장애인의 쇼핑 편의 향상
 ### 📢 방향
 - 상품 이미지를 학습하여 상품 인식, 안내
-- 시각장애인의 위치를 Detecting, Tracking 하여 쇼핑 경로 안내
+- ~~시각장애인의 위치를 Detecting, Tracking 하여 쇼핑 경로 안내~~
+- 마트 상품코너 데이터를 토대로 상품 코너 경로 안내
 ### 🕹 수행 방법▪도구
 - Object Tracking (객체 탐지 및 추적 방법)
   - model : YOLO-v3, Deep Sort (딥러닝 기반 실시간 다중 추적 시스템)
@@ -22,6 +23,11 @@
 - 상품명 촬영 시 이미지 인식 (마트 홈페이지 크롤링 데이터로부터 검색 후 가격 정보 안내 & 유사품과 가격 비교)
 - 마트에 설치된 카메라로 사용자를 인식, 추적하여 사용자의 위치 정보 생성
 - 마트 내 위치 정보를 통해 경로 안내(카트에 담긴 상품들의 특성에 따른 최적 쇼핑 경로 안내)
+### 🔨포함기술
+- 장애물 인식 : raspberry pi 에서 predict 진행
+    - YOLO 모델을 사용하여 사람을 인식
+    - tensorflow Lite 사용하여 라즈베리파이에 올릴 수 있는 경량화된 모델로 제작
+- 상품 분류 : Web에서 predict 진행, pytorch
 ### 📚 데이터
 - [딥러닝 기반 다중 CCTV 영상](https://drive.google.com/drive/folders/1el9kK4wgaiMzEMlfzqeQx6acoq703diP)
 - [Real-Time Object Detection on COCO](https://paperswithcode.com/sota/real-time-object-detection-on-coco)
