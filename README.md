@@ -16,6 +16,7 @@
 - Object Tracking (객체 탐지 및 추적 방법)
   - model : YOLO-v3, Deep Sort (딥러닝 기반 실시간 다중 추적 시스템)
   - 실험 데이터 : MOT16, MOT challenge benchmark (CCTV 영상처럼 구성)
+- OCR, Image Detect 둘다 함께 써서 정확도를 높이고자 함
 - IDE : Jupyter Notebook
 - Tool : Python
 - library : pytorch, opencv, sklearn, matplotlib, numpy, pandas
