@@ -2,7 +2,6 @@
 - [김인후](https://github.com/InhuKim)
 - [서지연](https://github.com/Yeony54)
 - [심혜주](https://github.com/hjst0223)
-- [이지희](https://github.com/2-Jihee)
 - [정민수](https://github.com/yourms)
 ## 🛒 시각 장애인 마트 쇼핑 서비스 
 - [프로젝트 상세 보기](https://github.com/multicampusiot3project/info)
