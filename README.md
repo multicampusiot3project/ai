@@ -53,6 +53,9 @@
 - [[논문, 코드] 로고인식 논문, 소스코드](https://m.facebook.com/groups/TensorFlowKR/permalink/501214233552973/)
 - [[서비스구현] 와들프로젝트:시각장애인을 위해 OCR을 사용하여 온라인 쇼핑 페이지를 읽어주는 서비스 (온라인)](https://www.chosun.com/national/national_general/2021/06/15/B2NNB3S35NFHTEHSRJHUUZIICM/)
 
+### 🗝 Baseline Model
+- 성능 비교의 기준이 되는 모델
+
 ### 🖋 아키텍쳐
 ![product_classification](https://user-images.githubusercontent.com/96727006/172310429-45af1eb1-be1f-4696-9ef4-98138a3fbada.jpg)
 
