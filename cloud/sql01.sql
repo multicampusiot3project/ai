@@ -1,0 +1,12 @@
+-- create database martPosition character set utf8mb4 collate utf8mb4_general_ci;
+-- use martPosition
+-- show tables;
+-- select * from auth_user;
+-- show tables;
+-- drop database martPosition;
+-- create database martPosition character set utf8mb4 collate utf8mb4_general_ci;
+-- use martPosition
+-- show tables;
+-- select * from auth_user;
+-- select * from martmap;
+-- drop table martmap
