@@ -3,7 +3,7 @@
 | lamb     | **<span style="color:red">o</span> 혜주 c(a)** | - 지연a                                    | **<span style="color:red">o</span> 혜주 c(d)** |
 | adam     | **<span style="color:red">o</span> 혜주 c(a)** | **<span style="color:red">o</span> 지연a** | x 혜주                                    |
 | rmsprop  | **<span style="color:red">o</span> 혜주 c(a)** | **<span style="color:red">o</span> 지연a** | x 인후                                    |
-| nadam    | **<span style="color:red">o</span> 지연 c(1)** | **<span style="color:red">o</span> 지연a**                                    | x 인후                                    |
+| nadam    | **<span style="color:red">o</span> 지연 c(1)** | **<span style="color:red">o</span> 지연a**                                    | - 지연c(1)                                    |
 
 | efficientnet | 1e-3                                      | 1e-4 | 1e-5                                      |
 | ------------ | ----------------------------------------- | ---- | ----------------------------------------- |
