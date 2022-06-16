@@ -10,7 +10,7 @@
 | lamb         | **<span style="color:red">o</span> 혜주** | x    | **<span style="color:red">o</span> 혜주** |
 | adam         | **<span style="color:red">o</span> 혜주** | x    | x                                         |
 | rmsprop      | x                                         | x    | x                                         |
-| nadam        | x                                         | x    | x                                         |
+| nadam        | - 지연c(4)                                        | x    | x                                         |
 
 | regnet  | 1e-3                                      | 1e-4 | 1e-5                                      |
 | ------- | ----------------------------------------- | ---- | ----------------------------------------- |
