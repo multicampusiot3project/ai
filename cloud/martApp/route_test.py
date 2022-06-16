@@ -108,8 +108,20 @@ def find_junction(first, second):
     return short_list
 
         #print([print(junction) for junction in junction_list])
-
-route_list = ["D_4", "E_10", "I_1"]
+def rout_list_set(route_list):
+    route_list2 = []
+    for route in route_list:
+        route2 = route.split("_")
+        if(route2[1] in ["2","5","8","11"]):
+            route2[1] = str(int(route2[1])-1)
+            route = route2[0] + "_" + route2[1]
+        if (route2[1] in ["3", "6", "9", "12"]):
+            route2[1] = str(int(route2[1]) + 1)
+            route = route2[0] + "_" + route2[1]
+        route_list2.append(route)
+    return route_list2
+route_list = ["D_3", "E_8", "I_12", "I_2"]
+route_list = rout_list_set(route_list)
 #print(len(route_list))
 route_list = list(permutations(route_list, len(route_list)))
 shortest_route = []
