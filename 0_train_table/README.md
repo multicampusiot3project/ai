@@ -1,21 +1,26 @@
-| resnet50 | 1e-3                                      | 1e-4                                       | 1e-5                                      |
-| -------- | ----------------------------------------- | ------------------------------------------ | ----------------------------------------- |
-| lamb     | **<span style="color:red">o</span> 혜주 c(a)** | - 지연a                                    | **<span style="color:red">o</span> 혜주 c(d)** |
-| adam     | **<span style="color:red">o</span> 혜주 c(a)** | **<span style="color:red">o</span> 지연a** | x 혜주                                    |
-| rmsprop  | **<span style="color:red">o</span> 혜주 c(a)** | **<span style="color:red">o</span> 지연a** | - 지연c(5)                                    |
-| nadam    | **<span style="color:red">o</span> 지연 c(1)** | **<span style="color:red">o</span> 지연a**                                    | - 지연c(1)                                    |
+# Train Table
 
-| efficientnet | 1e-3                                      | 1e-4 | 1e-5                                      |
-| ------------ | ----------------------------------------- | ---- | ----------------------------------------- |
-| lamb         | **<span style="color:red">o</span> 혜주 c(b)** | x    | **<span style="color:red">o</span> 혜주 c(e)** |
-| adam         | **<span style="color:red">o</span> 혜주 c(b)** | x    | x                                         |
-| rmsprop      | x                                         | x    | x                                         |
-| nadam        | - 지연c(4)                                        | x    | x                                         |
 
-| regnet  | 1e-3                                      | 1e-4 | 1e-5                                      |
-| ------- | ----------------------------------------- | ---- | ----------------------------------------- |
-| lamb    | **<span style="color:red">o</span> 혜주 c(c)** | x    | **<span style="color:red">o</span> 혜주 lo** |
-| adam    | **<span style="color:red">o</span> 혜주 c(c)** | x    | **<span style="color:red">o</span> 혜주 lo** |
-| rmsprop | x                                         | x    | - 혜주                                    |
-| nadam   | x                                         | x    | x                                         |
+
+
+| resnet50 | 1e-3                                              | 1e-4                                          | 1e-5        |
+| -------- | ------------------------------------------------- | --------------------------------------------- | ----------- |
+| lamb     | o 혜주 c(a)                                       | 지연a<br />E [50] T : [0.19234] V : [0.11658] | o 혜주 c(d) |
+| adam     | o 혜주 c(a)                                       | 지연a<br />E [22] T : [0.01547] V : [0.00182] | x 혜주      |
+| rmsprop  | o 혜주 c(a)                                       | 지연a<br />E [23] T : [0.01033] V : [0.00154] | - 지연c(5)  |
+| nadam    | 지연 c(1)<br />E [20] T : [0.02579] V : [0.00320] | 지연a<br />E [20] T : [0.00953] V : [0.00164] | - 지연c(1)  |
+
+| efficientnet | 1e-3                                               | 1e-4    | 1e-5        |
+| ------------ | -------------------------------------------------- | ------- | ----------- |
+| lambo        | o 혜주 c(b)                                        | - 지연a | o 혜주 c(e) |
+| adam         | o 혜주 c(b)                                        | x       | x           |
+| rmsprop      | - 지연 c(4)                                        | x       | x           |
+| nadam        | o 지연c(4)<br />E [23] T : [0.00577] V : [0.00002] | x       | x           |
+
+| regnet  | 1e-3        | 1e-4 | 1e-5      |
+| ------- | ----------- | ---- | --------- |
+| lambo   | o 혜주 c(c) | x    | o 혜주 lo |
+| adam    | o 혜주 c(c) | x    | o 혜주 lo |
+| rmsprop | x           | x    | - 혜주    |
+| nadam   | x           | x    | x         |
 
