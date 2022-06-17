@@ -18,7 +18,7 @@ AI hub dessert 14개 항목 train 각 114장, valid 각 15장 data 학습
     <td rowspan="2">lamb</td>
     <td>혜주 c(a) <br>    E [32] LR [9.5677e-04] <br>     T : [0.04888] V : [0.02917]</td>
     <td>지연a <br>E [50] LR [2.5000e-05]<br>T : [0.19234] V : [0.11658]</td>
-    <td>혜주 c(d) <br>E [50] LR [2.5000e-06] <br><br>     T : [2.39901] V : [2.34901]</td>
+    <td>혜주 c(d) <br>E [50] LR [2.5000e-06] <br>     T : [2.39901] V : [2.34901]</td>
   </tr>
   <tr>
     <td>0.709677419</td>
