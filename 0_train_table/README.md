@@ -62,6 +62,7 @@ AI hub dessert 14개 항목 train 각 114장, valid 각 15장 data 학습
 </table>
 
 
+
 <table>
 <thead>
   <tr>
@@ -76,23 +77,23 @@ AI hub dessert 14개 항목 train 각 114장, valid 각 15장 data 학습
     <td rowspan="2">lamb</td>
     <td>혜주 c(b)     <br>E [49] LR [1.6543e-04] <br>     T : [0.00425] V : [0.00020]</td>
     <td>지연a <br>E [50] RL [2.5000e-05]<br>T : [1.61274] V : [1.53337]</td>
-    <td>혜주 c(e)</td>
+    <td>혜주 c(e) <br>E [50] LR [2.5000e-06]<br> T : [2.60926] V : [2.60316]</td>
   </tr>
   <tr>
     <td>0.677419355</td>
     <td>0.419354839</td>
-    <td>예정</td>
+    <td>0.129032258</td>
   </tr>
   <tr>
     <td rowspan="2">adam</td>
     <td>혜주 c(b)     <br>E [21] LR [3.4549e-04] <br>     T : [0.00800] V : [0.03702]</td>
     <td>지연a <br>E [41] LR [1.6543e-05]<br>T : [0.01585] V : [0.00052]</td>
-    <td>혜주 c(c)</td>
+    <td>혜주 c(c) <br>E [50] LR [2.5000e-06]<br> T : [0.23441] V : [0.12908]</td>
   </tr>
   <tr>
     <td>0.709677419</td>
     <td>0.677419355</td>
-    <td>예정</td>
+    <td>0.580645161</td>
   </tr>
   <tr>
     <td rowspan="2">rmsprop</td>
@@ -118,6 +119,7 @@ AI hub dessert 14개 항목 train 각 114장, valid 각 15장 data 학습
   </tr>
 </tbody>
 </table>
+
 
 
 <table>
@@ -154,25 +156,26 @@ AI hub dessert 14개 항목 train 각 114장, valid 각 15장 data 학습
   </tr>
   <tr>
     <td rowspan="2">rmsprop</td>
-    <td>지연 c(8)        </td>
+    <td> 지연 c(4)<br>E [46] LR [1.0926e-05]<br>T : [0.01842] V : [0.00041] </td>
     <td> 지연a<br>E [21] LR [3.4549e-05]<br>T : [0.00424] V : [0.00034] </td>
     <td> o 혜주 lo <br>E [46] LR [1.0926e-07] <br>T : [0.00190] V : [0.00018]</td>
   </tr>
   <tr>
-    <td>예정</td>
+    <td>0.387096774</td>
     <td>0.677419355</td>
     <td>0.935483871</td>
   </tr>
   <tr>
     <td rowspan="2"> nadam</td>
-    <td>지연 c(1) </td>
+    <td> 지연 c(1)<br>E [21] LR [3.4549e-04]<br>T : [0.01229] V : [0.00049]</td>
     <td> 지연c(5)<br>E [24] LR [6.5451e-05]<br>T : [0.01436] V : [0.00030] </td>
     <td> o 혜주 lo<br>E [49] LR [1.6543e-06] <br>T : [0.00528] V : [0.00050] </td>
   </tr>
   <tr>
-    <td>예정</td>
+    <td>0.451612903</td>
     <td>0.709677419</td>
     <td>0.870967742</td>
   </tr>
 </tbody>
 </table>
+
