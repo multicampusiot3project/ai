@@ -6,5 +6,5 @@ from . import views
 app_name = 'image_classification'
 urlpatterns = [
     # two paths: with or without given image
-    path('', views.index, name='index'),
+    path('classifier', views.index, name='index'),
 ]

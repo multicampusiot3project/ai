@@ -57,7 +57,7 @@ class RegNet(torch.nn.Module):
         return out
 
 model = RegNet().to(device)
-model.load_state_dict(torch.load('./../../saved_models/RegNet_1e-05_rmsprop_CosineAnnealing_example.pth'))
+model.load_state_dict(torch.load('/home/lab20/ai/saved_models/RegNet_1e-05_rmsprop_CosineAnnealing_example.pth'))
 
 
 
