@@ -87,7 +87,7 @@ def predict(images, device):
 
 def index(request):
     image_uri = None
-    predicted_label = None
+    prediction = None
 
     if request.method == 'POST':
         image = load_image(test_image)
