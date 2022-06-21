@@ -89,20 +89,20 @@ def index(request):
     image_uri = None
     prediction = None
 
-    if request.method == 'POST':
-        image = load_image(test_image)
-            # get predicted label
-        try:
-            prediction = predict(image)
-            prediction = prediction.argmax(axis=1)
-            prediction = label_decoder[prediction]
+    # if request.method == 'POST':
+    image = load_image(test_image)
+        # get predicted label
+    try:
+        prediction = predict(image)
+        prediction = prediction.argmax(axis=1)
+        prediction = label_decoder[prediction]
 
-        except RuntimeError as re:
-            print(re)
-            # predicted_label = "Prediction Error"
+    except RuntimeError as re:
+        print(re)
+        # predicted_label = "Prediction Error"
 
-    else:
-        print('error')
+    # else:
+    #     print('error')
 
     context = {
         'image_uri': test_image,
