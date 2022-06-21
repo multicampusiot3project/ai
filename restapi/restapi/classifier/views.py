@@ -19,8 +19,20 @@ import paho.mqtt.publish as publisher
 
 
 CATEGORY = {'dessert': 14}
-IMAGE_URL = {'input': '', 'output': ''}
+IMAGE_LABEL = {'input': '', 'output': ''}
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+
+test_image = '/home/lab20/image/product_image/' + '35102_00_m_1.jpg'
+
+#--------- dessert label list ------------
+labels = ['25222_대만)망고케익184g', '25228_대만)파인애플케익184G', '35211_매일유업)데르뜨130G', '35584_매일데르뜨파인애플90G',
+                          '35585_매일데르뜨감귤90G', '45030_돌황도666G', '45657_씨제이)쁘티첼(요거젤리복숭아)', '45658_씨제이)쁘티첼(요거젤리밀감)',
+                          '45659_씨제이)쁘티첼(요거젤리딸기)', '45660_씨제이)쁘티첼(요거젤리화이트코코)', '45661_씨제이)쁘티첼(요거젤리블루베리)',
+                          '55034_돌트로피칼666G', '55701_쁘띠첼요거젤리밀감', '55702_쁘띠첼요거젤리복숭아']
+labels = {string: i for i, string in enumerate(labels)}
+label_decoder = {val: key for key, val in labels.items()}
+# --------------
+
 
 class RegNet(torch.nn.Module):
     def __init__(self):
@@ -78,10 +90,13 @@ def index(request):
     predicted_label = None
 
     if request.method == 'POST':
-        image = load_image('/home/lab18/imageTest01/mart_image/' + '1.jpg')
+        image = load_image(test_image)
             # get predicted label
         try:
-            predicted_label = predict(image)
+            prediction = predict(image)
+            prediction = prediction.argmax(axis=1)
+            prediction = label_decoder[prediction]
+
         except RuntimeError as re:
             print(re)
             # predicted_label = "Prediction Error"
@@ -90,8 +105,7 @@ def index(request):
         print('error')
 
     context = {
-        'form': form,
-        'image_uri': image_uri,
-        'predicted_label': predicted_label,
+        'image_uri': test_image,
+        'predicted_label': prediction,
     }
     return render(request, 'image_classification/index.html', context)
