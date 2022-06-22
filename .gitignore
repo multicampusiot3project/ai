@@ -2,3 +2,4 @@ git_hj/results/*
 .ipynb_checkpoints/*
 git_hj/.ipynb_checkpoints/*
 git_jy/.ipynb_checkpoints/*
+git_jy/data/*
