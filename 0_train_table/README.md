@@ -178,4 +178,3 @@ AI hub dessert 14개 항목 train 각 114장, valid 각 15장 data 학습
   </tr>
 </tbody>
 </table>
-
