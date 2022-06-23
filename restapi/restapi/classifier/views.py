@@ -10,10 +10,7 @@ from PIL import Image
 from torchvision import transforms
 from torchvision import models
 import torch.nn as nn
-import threading
-import paho.mqtt.client as mqtt
-from threading import Thread, Event
-import paho.mqtt.publish as publisher
+
 
 
 
@@ -23,6 +20,7 @@ IMAGE_LABEL = {'input': '', 'output': ''}
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 test_image = '/home/lab20/image/product_image/' + '35102_00_m_1.jpg'
+local_image = 'C:\\coding_test\\project\\ai\\imageTest01\\mart_image\\35188_00_m_17.jpg'
 
 #--------- dessert label list ------------
 labels = ['25222_대만)망고케익184g', '25228_대만)파인애플케익184G', '35211_매일유업)데르뜨130G', '35584_매일데르뜨파인애플90G',
@@ -56,8 +54,11 @@ class RegNet(torch.nn.Module):
 
         return out
 
+aws_model_path = '/home/lab20/ai/saved_models/RegNet_1e-05_rmsprop_CosineAnnealing_example.pth'
+local_model_path = 'C:\\coding_test\\project\\ai\\result\\RegNet_1e-05_rmsprop_CosineAnnealing_example.pth'
+
 model = RegNet().to(device)
-model.load_state_dict(torch.load('/home/lab20/ai/saved_models/RegNet_1e-05_rmsprop_CosineAnnealing_example.pth'))
+model.load_state_dict(torch.load(local_model_path, map_location='cpu'))
 
 
 
@@ -82,30 +83,32 @@ def predict(images, device):
         preds = torch.softmax(preds, dim=1)
         preds = preds.cpu().numpy()
 
-    return np.array(preds)
+    return np.array(preds.tolist())
 
 
 def index(request):
     image_uri = None
-    predicted_label = None
+    prediction = None
 
-    if request.method == 'POST':
-        image = load_image(test_image)
-            # get predicted label
-        try:
-            prediction = predict(image)
-            prediction = prediction.argmax(axis=1)
-            prediction = label_decoder[prediction]
+    # if request.method == 'POST':
+    image = load_image(local_image)
+    image = image.unsqueeze(dim=0)
+    # get predicted label
 
-        except RuntimeError as re:
-            print(re)
-            # predicted_label = "Prediction Error"
+    prediction = predict(image, device)
+    prediction = prediction.argmax(axis=1)
+    prediction = prediction.tolist()
+    prediction = label_decoder[prediction[0]]
 
-    else:
-        print('error')
+    # except RuntimeError as re:
+    #     print(re)
+        # predicted_label = "Prediction Error"
+
+    # else:
+    #     print('error')
 
     context = {
-        'image_uri': test_image,
-        'predicted_label': prediction,
+        'image_uri': local_image,
+        'predicted_label': prediction[:5],
     }
     return render(request, 'image_classification/index.html', context)
