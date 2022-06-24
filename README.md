@@ -205,7 +205,7 @@ YoloV5 : 실시간 객체 인식 시스템, 기본적으로 80개의 이미지�
     - 한칸씩, 한칸만 으로 예상 경로 표시
 - 구동 화면
     
-    ![image](https://user-images.githubusercontent.com/52309288/175549914-ac1b13a8-9f30-4f4d-9e78-26e1bded3012.png)
+    <img src="https://user-images.githubusercontent.com/52309288/175549914-ac1b13a8-9f30-4f4d-9e78-26e1bded3012.png" width="350" height="350">
     
 - 동영상 링크
     
