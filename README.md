@@ -209,4 +209,4 @@ YoloV5 : 실시간 객체 인식 시스템, 기본적으로 80개의 이미지�
     
 - 동영상 링크
     
-    [Video]([https://youtu.be/HMvhI344gSo](https://youtu.be/HMvhI344gSo))
+    [Video](https://youtu.be/HMvhI344gSo)
