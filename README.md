@@ -92,7 +92,7 @@ YoloV5 : 실시간 객체 인식 시스템, 기본적으로 80개의 이미지�
 
 라즈베리파이 위에서 사용하기 위해 사이즈가 작은 YOLOv5s를 사용
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d878b1c0-25fe-4de7-9e9b-9264836e5750/Untitled.png)
+![image](https://user-images.githubusercontent.com/52309288/175549627-904aa339-a826-47e2-9240-e61d67a32684.png)
 
 > **프로세스**
 > 
@@ -112,13 +112,13 @@ YoloV5 : 실시간 객체 인식 시스템, 기본적으로 80개의 이미지�
         
     - 트레이닝 결과
         
-        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d869b9d4-b68a-427e-aa73-1ff950f2b704/Untitled.png)
+        ![image](https://user-images.githubusercontent.com/52309288/175549707-6db7fbd4-718f-4f6b-9424-02cc2c9735a9.png)
         
 - mqtt 연결 테스트
     - 라즈베리파이와 AI서버 통신 연결
 - mqtt를 사용하여 Yolo 테스트
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/043dfb27-43b3-4bb1-a2fb-2aa5a6bdbfe7/Untitled.png)
+    ![image](https://user-images.githubusercontent.com/52309288/175549754-fba8bb9f-0045-47e2-8929-46c6c191e801.png)
     
 
 ## 2. 상품 분류
@@ -163,7 +163,7 @@ YoloV5 : 실시간 객체 인식 시스템, 기본적으로 80개의 이미지�
     - 각 Model, Optimizer, Learning Rate 를 사용해 test data set(디저트 14종)을 학습
     - 학습한 결과, (Regnet, 1e-5, rmsprop) 학습에서 accuracy가 0.935 로 가장 높았다.
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/92e25324-476a-431b-99e8-bd14b42802d4/Untitled.png)
+    ![image](https://user-images.githubusercontent.com/52309288/175549827-a92316e1-5953-4476-8394-f8d4530e294f.png)
     
     - 이 이외에도 Regnet에서 가장 좋은 성능을 보여주었다.
     - lamb accuracy가 떨어짐 → 학습을 할수록 엉뚱하게 분류
@@ -205,7 +205,7 @@ YoloV5 : 실시간 객체 인식 시스템, 기본적으로 80개의 이미지�
     - 한칸씩, 한칸만 으로 예상 경로 표시
 - 구동 화면
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/397c7b93-cbfd-4352-99ed-21b25eeea131/Untitled.png)
+    ![image](https://user-images.githubusercontent.com/52309288/175549914-ac1b13a8-9f30-4f4d-9e78-26e1bded3012.png)
     
 - 동영상 링크
     
