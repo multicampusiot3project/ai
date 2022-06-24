@@ -1,5 +1,5 @@
-git_hj/results/*
+ObjectClassifier/git_hj/results/*
 .ipynb_checkpoints/*
-git_hj/.ipynb_checkpoints/*
-git_jy/.ipynb_checkpoints/*
-git_jy/data/*
+ObjectClassifier/git_hj/.ipynb_checkpoints/*
+ObjectClassifier/git_jy/.ipynb_checkpoints/*
+ObjectClassifier/git_jy/data/*
