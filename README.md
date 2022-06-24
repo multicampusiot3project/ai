@@ -64,9 +64,9 @@
 
 ### 아키텍쳐
 
-![product_classification.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4f3af202-67cb-4c58-b20c-4a731012052e/product_classification.jpg)
+![product_classification](https://user-images.githubusercontent.com/96727006/172310429-45af1eb1-be1f-4696-9ef4-98138a3fbada.jpg)
 
-![classification_training_process.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f5b608f4-1da6-4ea3-8e40-da61469fd1a5/classification_training_process.jpg)
+![classification_training_process](https://user-images.githubusercontent.com/96727006/172310480-8be0d009-0453-46ff-a94f-04506564fbc8.jpg)
 
 [테스트 케이스](https://www.notion.so/6d0879ae37bc4ed487a3b0f3708ac9eb)
 
